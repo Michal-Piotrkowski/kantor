@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="script.js"></script>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+        }
+
+        #dane {
+            display: flex;
+            justify-content: center;
+        }
+
+        td {
+            width: 100px;
+            height: 50px;
+            text-align: center;
+            border: solid 2px black;
+        }
+
+        table {
+            border: solid 2px black;
+        }
+
+        .x {
+            background-size: cover;
+            background-position: center;
+            background-image: url("u.gif");
+        }
+
+        .accept {
+            background-size: cover;
+            background-position: center;
+            background-image: url("faja.png");
+        }
+
+        span {
+            width: 40px;
+            height: 40px;
+        }
+    </style>
+</head>
+
+<body onload="get_options()">
+    <div id="tabelka">
+        <div id="dane">
+
+        </div>
+        Wybierz Kraj:
+        <select id="countries">
+        </select>
+        Wybierz nominał:
+        <input type="text" maxlength="20" id="nominal" />
+        Wybierz kategorie:
+        <input type="text" maxlength="20" id="cat" />
+        Wybierz stop metalu:
+        <select id="metals">
+        </select>
+        Wybierz rok produkcji:
+        <input type="text" maxlength="4" id="year" />
+        <button id="submit" onclick="post_currency()">PRZEŚLIJ</button>
+    </div>
+</body>
+
+</html>
